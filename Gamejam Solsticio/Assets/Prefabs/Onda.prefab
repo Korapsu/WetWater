@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7918771369260006304}
   - component: {fileID: -8007680981093167117}
   - component: {fileID: 5045801196214566134}
-  m_Layer: 4
+  m_Layer: 3
   m_Name: Onda
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -15,14 +15,6 @@ public class OndaMapMovement : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player")) {
-            collision.GetComponent<OndaMovement>().death();
-            StartCoroutine(death()); 
-        }
-    }
-
     IEnumerator death()
     {
         yield return new WaitForSeconds(1f);
