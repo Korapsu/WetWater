@@ -12,6 +12,7 @@ public class OndaMovement : MonoBehaviour
     [SerializeField] LayerMask ondaMask;
     bool isDead = false;
 
+
     void Start()
     {
         Vector2 startPosition = new Vector2(this.gameObject.transform.position.x, pontos[0].position.y);
@@ -55,16 +56,16 @@ public class OndaMovement : MonoBehaviour
     public void death()
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector3.up, 10, ondaMask);
-        print(hit.transform.position.y - transform.position.y);
-        if (hit.collider == null || hit.distance < 100) return;
 
-        GetComponent<Animator>().SetTrigger("dead");
+        if (timer < 5 || hit.collider == null || Mathf.Abs(hit.transform.position.y - transform.position.y)  < 2 ) return;
+
+        GetComponentInChildren<Animator>().SetTrigger("dead");
         GetComponent<BoxCollider2D>().enabled = false;
         isDead = true;
     }
 
     private void LateUpdate()
     {
-        text.text = timer.ToString();
+        text.text = $"{timer: 0.0}";
     }
 }
