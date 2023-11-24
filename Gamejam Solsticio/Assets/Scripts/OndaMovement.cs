@@ -9,6 +9,8 @@ public class OndaMovement : MonoBehaviour
     public Transform[] pontos;
     public float timer; [SerializeField] TextMeshProUGUI text;
 
+    [SerializeField] Material material;
+
     [SerializeField] LayerMask ondaMask;
     bool isDead = false;
 
@@ -66,6 +68,9 @@ public class OndaMovement : MonoBehaviour
 
     private void LateUpdate()
     {
-        text.text = $"{timer: 0.0}";
+        text.text = $"{timer: 0}";
+
+        if (material.mainTextureOffset.x > 1000) material.mainTextureOffset -= new Vector2(material.mainTextureOffset.x, 0);
+        else material.mainTextureOffset += 0.2f * Time.deltaTime * Vector2.right;
     }
 }

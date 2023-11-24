@@ -10,14 +10,14 @@ public class OndaMapMovement : MonoBehaviour
     {
         transform.Translate(Vector2.left * velocidade * Time.deltaTime);
 
-        if (transform.position.x < -10f)
+        if (transform.position.x < -15f)
         {
             Destroy(gameObject);
         }
     }
     IEnumerator death()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(3f);
         SceneManager.LoadScene(0);
     }
 }
