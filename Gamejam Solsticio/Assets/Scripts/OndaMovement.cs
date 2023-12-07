@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OndaMovement : MonoBehaviour
 {
@@ -50,11 +51,13 @@ public class OndaMovement : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector3.up, 10, ondaMask);
             if (hit.collider != null) newPostion(hit.transform, pontos[ondaAtual]);
         }
+
         void newPostion(Transform onda, Transform pos)
         {
             onda.transform.position = new Vector3(onda.transform.position.x, pos.transform.position.y);
         }
     }
+
     public void death()
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector3.up, 10, ondaMask);
@@ -64,6 +67,15 @@ public class OndaMovement : MonoBehaviour
         GetComponentInChildren<Animator>().SetTrigger("dead");
         GetComponent<BoxCollider2D>().enabled = false;
         isDead = true;
+        StartCoroutine(die());
+
+
+        IEnumerator die()
+        {
+            yield return new WaitForSeconds(0.3f);
+            SceneManager.LoadScene("Death");
+        }
+
     }
 
     private void LateUpdate()
