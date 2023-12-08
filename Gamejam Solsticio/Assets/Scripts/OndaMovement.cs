@@ -62,6 +62,7 @@ public class OndaMovement : MonoBehaviour
             if (hit.collider != null) newPostion(hit.transform, pontos[ondaAtual]);
         }
 
+
         void newPostion(Transform onda, Transform pos)
         {
             onda.transform.position = new Vector3(onda.transform.position.x, pos.transform.position.y);
