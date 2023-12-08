@@ -247,7 +247,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 18.09, y: 52.75}
+  m_AnchoredPosition: {x: 72, y: 150}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &238414460
@@ -270,7 +270,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SOBREVIVA POR 100 SEGUNDOS
+  m_text: FIQUE EM CIMA DA PRANCHA POR 100 SEGUNDOS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 989500eaaa3efaf48b5a787f4d1e0936, type: 2}
   m_sharedMaterial: {fileID: -4740222052573337622, guid: 989500eaaa3efaf48b5a787f4d1e0936, type: 2}
@@ -876,7 +876,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: FIQUE NA MESMA ALTURA QUE A PROXIMA ONDA SENAO VOCE CAI
+  m_text: FIQUE NA MESMA ALTURA QUE A PROXIMA ONDA , SENAO VOCE IRA CAIR
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 114691fb0a6a4f545b8bcede55c15882, type: 2}
   m_sharedMaterial: {fileID: -5523334228705074859, guid: 114691fb0a6a4f545b8bcede55c15882, type: 2}

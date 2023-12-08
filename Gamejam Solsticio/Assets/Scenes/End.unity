@@ -716,8 +716,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000038146973, y: 90.8575}
-  m_SizeDelta: {x: 527.6592, y: 111.5255}
+  m_AnchoredPosition: {x: 0, y: 90.8575}
+  m_SizeDelta: {x: 541.7551, y: 111.5255}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1513968253
 MonoBehaviour:
@@ -739,17 +739,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: esta tarde mas pelo menos aproveitou o solsticio
+  m_text: esta tarde, mas pelo menos voce aproveitou o solsticio!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 114691fb0a6a4f545b8bcede55c15882, type: 2}
-  m_sharedMaterial: {fileID: -5523334228705074859, guid: 114691fb0a6a4f545b8bcede55c15882, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 989500eaaa3efaf48b5a787f4d1e0936, type: 2}
+  m_sharedMaterial: {fileID: -4740222052573337622, guid: 989500eaaa3efaf48b5a787f4d1e0936, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294901909
-  m_fontColor: {r: 0.5830178, g: 0, b: 1, a: 1}
+    rgba: 4290335631
+  m_fontColor: {r: 0.559767, g: 0.3255162, b: 0.7264151, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
