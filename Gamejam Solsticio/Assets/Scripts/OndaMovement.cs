@@ -91,6 +91,13 @@ public class OndaMovement : MonoBehaviour
     private void LateUpdate()
     {
         text.text = $"{timer: 0}";
+        if (timer > 85) { 
+            text.color = Color.red; 
+            if (timer >= 100 )
+            {
+                SceneManager.LoadScene("End");
+            }
+        }
 
         if (material.mainTextureOffset.x > 1000) material.mainTextureOffset -= new Vector2(material.mainTextureOffset.x, 0);
         else material.mainTextureOffset += 0.2f * Time.deltaTime * Vector2.right;
